@@ -39,12 +39,7 @@ const Navbar = () => {
     { title: "Gallery", links: [{ name: "Gallery", path: "/gallery" }] },
     { title: "Achievement", links: [{ name: "Achievement", path: "/achievement" }] },
     { title: "Contact Us", links: [{ name: "Contact Us", path: "/contact" }] },
-    {
-      title: "Fee Payment",
-      links: [
-        { name: "QR Code", path: "/qr-code" },
-      ],
-    },
+    { title: "Fee Payment", path: "/fees" },
   ];
 
   const handleMouseEnter = (index) => {
@@ -59,12 +54,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md relative">
+    <nav className="bg-[#010066] shadow-md relative">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="School Logo" className="h-10" />
-          <span className="font-bold text-xl">School Name</span>
+          <img src="/images/logo.png" alt="School Logo" className="h-10" />
+          <span className="font-bold text-xl text-white">Neev Baalpan Ki</span>
         </Link>
 
         {/* Hamburger Icon */}
@@ -92,42 +87,50 @@ const Navbar = () => {
           {menus.map((menu, idx) => (
             <li
               key={idx}
-              className="relative group"
-              onMouseEnter={() => handleMouseEnter(idx)}
+              className="relative group text-white"
+              onMouseEnter={() => menu.links && handleMouseEnter(idx)}
               onMouseLeave={handleMouseLeave}
             >
-              <button
-                className={`pb-1 border-b-2 transition-all duration-300 ${
-                  openMenu === idx
-                    ? "border-blue-500 text-blue-500"
-                    : "border-transparent hover:border-blue-500 hover:text-blue-500"
-                }`}
-              >
-                {menu.title}
-              </button>
+              {/* Case 1: Dropdown Menu */}
+              {menu.links ? (
+                <>
+                  <button
+                    className={`pb-1 border-b-2 transition-all duration-300 ${openMenu === idx
+                      ? "border-blue-500 text-blue-500"
+                      : "border-transparent hover:border-blue-500 hover:text-blue-500"
+                      }`}
+                  >
+                    {menu.title}
+                  </button>
 
-              {/* Dropdown */}
-              {openMenu === idx && (
-                <ul
-                  className="absolute left-0 mt-1 mr-5 bg-white shadow-lg border rounded w-56 z-50"
-                  onMouseEnter={() => handleMouseEnter(idx)}
-                  onMouseLeave={handleMouseLeave}
+                  {openMenu === idx && (
+                    <ul className="absolute left-0 mt-1 bg-[#010066] shadow-lg border w-48 z-50">
+                      {menu.links.map((link, i) => (
+                        <li key={i}>
+                          <Link
+                            to={link.path}
+                            className="block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors duration-200"
+                          >
+                            {link.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </>
+              ) : (
+                // Case 2: Direct Link (no dropdown)
+                <Link
+                  to={menu.path}
+                  className="pb-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-500 transition-all duration-300"
                 >
-                  {menu.links.map((link, i) => (
-                    <li key={i}>
-                      <Link
-                        to={link.path}
-                        className="block px-4 py-2 hover:bg-blue-100"
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                  {menu.title}
+                </Link>
               )}
             </li>
           ))}
         </ul>
+
       </div>
 
       {/* Mobile Menu */}
@@ -149,24 +152,34 @@ const Navbar = () => {
         <ul className="flex flex-col mt-16 space-y-2 px-6">
           {menus.map((menu, idx) => (
             <li key={idx} className="relative">
-              <details>
-                <summary className="cursor-pointer py-2 px-2 font-semibold text-gray-800 hover:text-blue-500 hover:bg-blue-50 rounded">
+              {menu.links ? (
+                <details>
+                  <summary className="cursor-pointer py-2 px-2 font-semibold text-gray-800 hover:text-blue-500 hover:bg-blue-50 rounded">
+                    {menu.title}
+                  </summary>
+                  <ul className="pl-4">
+                    {menu.links.map((link, i) => (
+                      <li key={i}>
+                        <Link
+                          to={link.path}
+                          className="block py-2 px-2 text-gray-700 hover:bg-blue-100 rounded"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {link.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              ) : (
+                <Link
+                  to={menu.path}
+                  className="cursor-pointer py-2 px-2 font-semibold text-gray-800 hover:text-blue-500 hover:bg-blue-50 rounded block"
+                  onClick={() => setMobileOpen(false)}
+                >
                   {menu.title}
-                </summary>
-                <ul className="pl-4">
-                  {menu.links.map((link, i) => (
-                    <li key={i}>
-                      <Link
-                        to={link.path}
-                        className="block py-2 px-2 text-gray-700 hover:bg-blue-100 rounded"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </details>
+                </Link>
+              )}
             </li>
           ))}
         </ul>
