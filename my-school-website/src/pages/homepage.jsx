@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
+import Advantages from '../components/Homepage/Advantages'
+import Banner from '../components/Homepage/Banner'
+// import Parents from '../components/Homepage/Parentsspeak'
+import Gallery from '../components/Homepage/Gallery'
+import Location from '../components/Homepage/Location'
+import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
 import { MdOutlineChildCare } from "react-icons/md";
 import { GrSchedule } from "react-icons/gr";
 
 const programmes = [
   {
-    title: "Playgroup",
+    title: "Play Group",
     age: "2–3 years Kids",
     schedule: "5 Days a week",
     img: "https://placehold.co/400x250?text=Playgroup",
@@ -16,26 +22,24 @@ const programmes = [
     title: "Nursery",
     age: "3–4 years Kids",
     schedule: "5 Days a week",
-    img: "https://placehold.co/400x250?text=Playgroup",
+    img: "https://placehold.co/400x250?text=Nursery",
     link: "/nursery",
   },
   {
     title: "LKG",
     age: "4–5 years Kids",
     schedule: "5 Days a week",
-    img: "https://placehold.co/400x250?text=Playgroup",
+    img: "https://placehold.co/400x250?text=LKG",
     link: "/junior-kg",
   },
   {
     title: "UKG",
     age: "5–6 years Kids",
     schedule: "5 Days a week",
-    img: "https://placehold.co/400x250?text=Playgroup",
+    img: "https://placehold.co/400x250?text=UKG",
     link: "/senior-kg",
   },
 ];
-
-import { useEffect, useRef } from "react";
 
 export default function Home() {
   const scrollRef = useRef(null);
@@ -69,17 +73,20 @@ export default function Home() {
           className="w-[90%] object-cover m-5"
         />
       </div>
+      <div className="w-full flex justify-center bg-[#010066]">
+        <Banner />
+      </div>
       <div className="w-full">
         <img
           src="/images/Upper.png"
-          alt="School Banner"
+          alt="Design"
           className="w-full object-cover"
         />
       </div>
 
       {/* Our Programmes */}
       <section className="bg-[#e1e1e1] py-12">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
             Our Programmes
           </h2>
@@ -131,20 +138,26 @@ export default function Home() {
             {programmes.map((program, idx) => (
               <div
                 key={idx}
-                className="min-w-[90vw] max-w-[90vw] mx-2 snap-center bg-white shadow-md rounded-xl overflow-hidden border-2 border-yellow-300 hover:shadow-xl transition"
+                className="min-w-[85vw] max-w-[85vw] mx-2 snap-center bg-white shadow-md rounded-xl overflow-hidden border-2 border-yellow-300 hover:shadow-xl transition"
               >
                 <img
                   src={program.img}
                   alt={program.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover m-5"
                 />
                 <div className="p-5 text-center">
-                  <h3 className="text-xl font-semibold text-[#010066] mb-3">
+                  <h3 className="text-3xl font-bold text-[#010066] mb-3">
                     {program.title}
                   </h3>
-                  <ul className="text-gray-700 text-sm mb-4 space-y-1">
-                    <li>👶 {program.age}</li>
-                    <li>📅 {program.schedule}</li>
+                  <ul className="m-4 flex justify-around text-center">
+                    <li className="flex flex-col items-center gap-2 font-bold">
+                      <MdOutlineChildCare className="text-[#010066] text-3xl" />
+                      <span>{program.age}</span>
+                    </li>
+                    <li className="flex flex-col items-center gap-2 font-bold">
+                      <GrSchedule className="text-[#010066] text-3xl" />
+                      <span>{program.schedule}</span>
+                    </li>
                   </ul>
                   <Link
                     to={program.link}
@@ -158,7 +171,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Advantages />
+      {/* <Parents /> */}
+      <Gallery />
+      <Location />
 
+      <Footer />
     </div>
   );
 }
