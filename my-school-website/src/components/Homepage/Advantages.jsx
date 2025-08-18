@@ -2,18 +2,18 @@ import { useRef, useEffect } from "react";
 
 const advantages = [
   {
-    title: "Curriculum",
-    desc: "We offer internationally advanced and scientifically designed iCan Learning System",
+    title: "Holistic Learning Approach",
+    desc: "At NeevBaalpan Ki, children learn through a balanced mix of play and structured activities. From language and numeracy to arts, motor skills, and emotional development, our curriculum ensures every child grows intellectually, socially, and creatively.",
     img: "/images/curriculum.jpg",
   },
   {
-    title: "Teaching Methodology",
-    desc: "We impart knowledge through innovative teaching methodologies",
+    title: "Experienced and Caring Faculty",
+    desc: "With highly qualified educators like Reeta Singh (9+ years of experience), our team provides personalized attention and nurtures each child’s unique potential. Teachers act as mentors, creating a safe, supportive, and inspiring environment for young learners.",
     img: "/images/methodology.jpg",
   },
   {
-    title: "Learning Partners",
-    desc: "We empower a child to acquire knowledge through the process of self exploration",
+    title: "Safe & Nurturing Environment",
+    desc: "We believe in making school a home away from home. With vibrant classrooms, engaging activities, and a focus on empathy and cooperation, children feel secure, valued, and excited to learn every day.",
     img: "/images/partners.jpg",
   },
 ];
