@@ -83,6 +83,7 @@ const Contact = () => {
             src="/public/lottiefile/Kids Studying from Home.lottie"
             autoplay
             loop
+            speed={1.25}
             style={{ width: '100%', height: '360px', maxWidth: '380px' }}
           />
         </div>
