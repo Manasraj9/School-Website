@@ -19,8 +19,8 @@ const Navbar = () => {
     {
       title: "Message",
       links: [
-        { name: "Director Message", path: "/director-message" },
         { name: "Principal Message", path: "/principal-message" },
+        { name: "Director Message", path: "" },
       ],
     },
     {

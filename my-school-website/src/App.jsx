@@ -5,7 +5,7 @@ import OurMoto from "./pages/OurMoto";
 import SchoolPrayer from "./pages/SchoolPrayer";
 import OurFaculties from "./pages/OurFaculties";
 import Management from "./pages/Management";
-import DirectorMessage from "./pages/DirectorMessage";
+// import DirectorMessage from "./pages/DirectorMessage";
 import PrincipalMessage from "./pages/PrincipalMessage";
 import Academics from "./pages/Academics";
 import AdmissionGuidelines from "./pages/AdmissionGuidelines";
@@ -28,7 +28,7 @@ export default function App() {
         <Route path="/our-faculties" element={<OurFaculties />} />
         <Route path="/management" element={<Management />} />
         {/* Message Dropdown */}
-        <Route path="/director-message" element={<DirectorMessage />} />
+        {/* <Route path="/director-message" element={<DirectorMessage />} /> */}
         <Route path="/principal-message" element={<PrincipalMessage />} />
         {/* Academic Profile */}
         <Route path="/academics" element={<Academics />} />

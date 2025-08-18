@@ -10,7 +10,7 @@ const mottoSpeech = [
 ];
 
 const OurMoto = () => (
-  <div className="min-h-screen bg-gray-50">
+  <div className="min-h-screen bg-[#ffd5af]">
     <Navbar />
     <div className="w-full">
       <img
@@ -19,10 +19,11 @@ const OurMoto = () => (
         className="w-full object-cover"
       />
     </div>
+    <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center mt-5">Our Moto</h2>
     <div className="flex justify-center items-center lg:py-10 md:py-8 sm:py-6">
       <div className="bg-white border rounded-2xl shadow-xl flex flex-col md:flex-row items-center p-10 max-w-6xl w-full mx-auto" style={{ borderColor: "#FE7743", borderWidth: "2px" }}>
         <div className="flex-1">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Motto</h2>
+          
            <ul className="list-disc pl-5 text-lg text-gray-700 space-y-2">
             {mottoSpeech.map((line, idx) => (
               <li key={idx}>{line}</li>
