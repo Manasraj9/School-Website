@@ -7,45 +7,44 @@ export default function Location() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center mb-2">
-          Preschool Near You
+          Our School Location
         </h2>
-        <p className="text-center text-gray-600 mb-8">Kangaroo Kids in Patna</p>
 
         {/* Card */}
         <div className="grid md:grid-cols-2 gap-6 bg-white border-2 border-yellow-400 rounded-lg p-6 shadow-md">
           {/* Contact Info */}
           <div className="space-y-6 flex flex-col justify-center">
             <div className="flex items-start gap-3">
-              <FaMapMarkerAlt className="text-purple-700 text-2xl mt-1" />
+              <FaMapMarkerAlt className="text-[#FF9B00] text-2xl mt-1" />
               <p className="text-gray-700">
                 <span className="font-bold">Location</span> <br />
-                House No. D 139, S K Puri, Near Children's Park, Boring Road,
-                Patna, BIHAR, 800001
+                Raj Lakshmi Niwas House No. 998191, Near Kamakhya Bhawan, Road No,-0, 
+                Shivpuri, Patna - 800023, Bihar
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <FaPhoneAlt className="text-purple-700 text-2xl mt-1" />
+              <FaPhoneAlt className="text-[#FF9B00] text-2xl mt-1" />
               <p className="text-gray-700">
                 <span className="font-bold">Phone</span> <br />
                 <a
                   href="tel:+919576559666"
                   className="text-blue-600 hover:underline"
                 >
-                  +91-9576559666
+                  +91-9142436076
                 </a>
               </p>
             </div>
 
             <div className="flex items-start gap-3">
-              <FaEnvelope className="text-purple-700 text-2xl mt-1" />
+              <FaEnvelope className="text-[#FF9B00] text-2xl mt-1" />
               <p className="text-gray-700">
                 <span className="font-bold">Email</span> <br />
                 <a
                   href="mailto:patna.boringroad@kangarookids.co.in"
                   className="text-blue-600 hover:underline"
                 >
-                  patna.boringroad@kangarookids.co.in
+                  neevbaalpanki@gmail.com
                 </a>
               </p>
             </div>

@@ -55,14 +55,14 @@ export default function AdvantageSection() {
           {advantages.map((item, idx) => (
             <div
               key={idx}
-              className="bg-white border-2 border-yellow-400 rounded-2xl shadow-sm hover:shadow-lg transition p-5 flex flex-col items-center text-center"
+              className="bg-white border-2 border-[#FF9B00] rounded-2xl shadow-sm hover:shadow-lg transition p-5 flex flex-col items-center text-center"
             >
               <img
                 src={item.img}
                 alt={item.title}
                 className="w-full h-48 object-cover rounded-lg mb-5"
               />
-              <h3 className="text-xl font-bold text-purple-700 mb-3">
+              <h3 className="text-xl font-bold text-[#FE7743] mb-3">
                 {item.title}
               </h3>
               <p className="text-gray-700">{item.desc}</p>
@@ -79,14 +79,14 @@ export default function AdvantageSection() {
           {advantages.map((item, idx) => (
             <div
               key={idx}
-              className="min-w-[90vw] max-w-[90vw] mx-2 snap-center bg-white border-2 border-yellow-400 rounded-xl shadow-md hover:shadow-lg transition p-5 flex flex-col items-center text-center"
+              className="min-w-[80vw] max-w-[80vw] mx-2 snap-center bg-white border-2 border-[#FF9B00] rounded-xl shadow-md hover:shadow-lg transition p-5 flex flex-col items-center text-center"
             >
               <img
                 src={item.img}
                 alt={item.title}
                 className="w-full h-48 object-cover rounded-lg mb-5"
               />
-              <h3 className="text-xl font-bold text-purple-700 mb-3">
+              <h3 className="text-xl font-bold text-[#FE7743] mb-3">
                 {item.title}
               </h3>
               <p className="text-gray-700">{item.desc}</p>

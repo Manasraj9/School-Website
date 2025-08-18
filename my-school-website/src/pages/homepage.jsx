@@ -15,28 +15,28 @@ const programmes = [
     title: "Play Group",
     age: "2–3 years Kids",
     schedule: "5 Days a week",
-    img: "https://placehold.co/400x250?text=Playgroup",
+    img: "/images/Classes_images/1.png",
     link: "/playgroup",
   },
   {
-    title: "Nursery",
+    title: "Neev Nursery",
     age: "3–4 years Kids",
     schedule: "5 Days a week",
-    img: "https://placehold.co/400x250?text=Nursery",
+    img: "/images/Classes_images/2.png",
     link: "/nursery",
   },
   {
-    title: "LKG",
+    title: "Neev Junior",
     age: "4–5 years Kids",
     schedule: "5 Days a week",
-    img: "https://placehold.co/400x250?text=LKG",
+    img: "/images/Classes_images/3.png",
     link: "/junior-kg",
   },
   {
-    title: "UKG",
+    title: "Neev Senior",
     age: "5–6 years Kids",
     schedule: "5 Days a week",
-    img: "https://placehold.co/400x250?text=UKG",
+    img: "/images/Classes_images/4.png",
     link: "/senior-kg",
   },
 ];
@@ -86,42 +86,39 @@ export default function Home() {
 
       {/* Our Programmes */}
       <section className="bg-[#e1e1e1] py-12">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-2">
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
             Our Programmes
           </h2>
-          {/* Desktop grid */}
+          {/* Desktop Grid */}
           <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {programmes.map((program, idx) => (
               <div
                 key={idx}
-                className="bg-white shadow-md rounded-2xl overflow-hidden border-2 border-yellow-300 hover:shadow-xl transition"
+                className="bg-white shadow-md rounded-xl overflow-hidden border-2 border-[#FF9B00] hover:shadow-xl transition w-72 mx-auto"
               >
-                <div className="flex justify-center align-center ">
-                  <img
-                    src={program.img}
-                    alt={program.title}
-                    className="w-full h-48 object-cover m-2 rounded-2xl"
-                  />
-                </div>
-                <div className="p-5 text-center">
-                  <h3 className="text-3xl font-bold text-[#010066] mb-3">
+                <img
+                  src={program.img}
+                  alt={program.title}
+                  className="w-60 h-60 object-cover m-4 rounded-2xl mx-auto"
+                />
+                <div className="p-4 text-center">
+                  <h3 className="text-2xl font-bold text-[#010066] mb-3">
                     {program.title}
                   </h3>
-                  <ul className="m-4 flex justify-around text-center">
+                  <ul className="m-4 flex justify-around text-center gap-3">
                     <li className="flex flex-col items-center gap-2 font-bold">
-                      <MdOutlineChildCare className="text-[#010066] text-3xl" />
+                      <MdOutlineChildCare className="text-[#010066] text-2xl" />
                       <span>{program.age}</span>
                     </li>
                     <li className="flex flex-col items-center gap-2 font-bold">
-                      <GrSchedule className="text-[#010066] text-3xl" />
+                      <GrSchedule className="text-[#010066] text-2xl" />
                       <span>{program.schedule}</span>
                     </li>
                   </ul>
-
                   <Link
                     to={program.link}
-                    className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition"
+                    className="inline-block bg-[#FE7743] hover:bg-[#ffac2f]/80 text-gray-900 font-semibold px-5 py-2 rounded-lg transition"
                   >
                     Enroll Now →
                   </Link>
@@ -129,7 +126,8 @@ export default function Home() {
               </div>
             ))}
           </div>
-          {/* Mobile horizontal scroll, single card at a time */}
+
+          {/* Mobile Horizontal Scroll */}
           <div
             className="lg:hidden flex overflow-x-auto scrollbar-hide snap-x snap-mandatory"
             ref={scrollRef}
@@ -138,30 +136,30 @@ export default function Home() {
             {programmes.map((program, idx) => (
               <div
                 key={idx}
-                className="min-w-[85vw] max-w-[85vw] mx-2 snap-center bg-white shadow-md rounded-xl overflow-hidden border-2 border-yellow-300 hover:shadow-xl transition"
+                className="min-w-[90vw] max-w-[90vw] ml-2 snap-center bg-white shadow-md rounded-xl overflow-hidden border-2 border-yellow-300 hover:shadow-xl transition"
               >
                 <img
                   src={program.img}
                   alt={program.title}
-                  className="w-full h-48 object-cover m-5"
+                  className="w-80 h-80 object-cover m-4 rounded-2xl mx-auto"
                 />
-                <div className="p-5 text-center">
-                  <h3 className="text-3xl font-bold text-[#010066] mb-3">
+                <div className="p-4 text-center">
+                  <h3 className="text-2xl font-bold text-[#010066] mb-3">
                     {program.title}
                   </h3>
-                  <ul className="m-4 flex justify-around text-center">
+                  <ul className="m-4 flex justify-around text-center gap-3">
                     <li className="flex flex-col items-center gap-2 font-bold">
-                      <MdOutlineChildCare className="text-[#010066] text-3xl" />
+                      <MdOutlineChildCare className="text-[#010066] text-2xl" />
                       <span>{program.age}</span>
                     </li>
                     <li className="flex flex-col items-center gap-2 font-bold">
-                      <GrSchedule className="text-[#010066] text-3xl" />
+                      <GrSchedule className="text-[#010066] text-2xl" />
                       <span>{program.schedule}</span>
                     </li>
                   </ul>
                   <Link
                     to={program.link}
-                    className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition"
+                    className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-5 py-2 rounded-lg transition"
                   >
                     Enroll Now →
                   </Link>
@@ -169,6 +167,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+
         </div>
       </section>
       <Advantages />

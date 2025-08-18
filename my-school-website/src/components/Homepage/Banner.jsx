@@ -3,7 +3,11 @@ import React, { useCallback, useEffect, useState } from "react"
 import useEmblaCarousel from "embla-carousel-react"
 
 const images = [
-  "/Homepage_banner/1.jpeg"
+  "/images/Homepage_banner/1.jpeg",
+  "/images/Homepage_banner/2.jpeg",
+  "/images/Homepage_banner/3.jpeg",
+  "/images/Homepage_banner/4.jpeg",
+  "/images/Homepage_banner/5.jpeg",
 ]
 
 export default function ImageCarousel() {
@@ -17,11 +21,9 @@ export default function ImageCarousel() {
 
   useEffect(() => {
     if (!emblaApi) return
-
     emblaApi.on("select", onSelect)
     onSelect()
 
-    // ✅ Auto-play every 3 seconds
     const autoplay = setInterval(() => {
       if (!emblaApi) return
       emblaApi.scrollNext()
@@ -35,13 +37,13 @@ export default function ImageCarousel() {
       <div className="flex">
         {images.map((src, i) => (
           <div
-            className="flex-[0_0_100%] w-full"
             key={i}
+            className="flex-[0_0_100%]" // full slide width only in carousel, not viewport
           >
             <img
               src={src}
               alt={`Slide ${i + 1}`}
-              className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] rounded-xl"
+              className="max-w-[90vw] mx-auto px-4 h-[250px] sm:h-[250px] md:h-[450px] lg:h-[550px] rounded-xl object-cover sm:p-4"
             />
           </div>
         ))}
