@@ -4,17 +4,17 @@ const advantages = [
   {
     title: "Holistic Learning Approach",
     desc: "At NeevBaalpan Ki, children learn through a balanced mix of play and structured activities. From language and numeracy to arts, motor skills, and emotional development, our curriculum ensures every child grows intellectually, socially, and creatively.",
-    img: "/images/curriculum.jpg",
+    img: "/images/Advantages/3.jpeg",
   },
   {
     title: "Experienced and Caring Faculty",
     desc: "With highly qualified educators like Reeta Singh (9+ years of experience), our team provides personalized attention and nurtures each child’s unique potential. Teachers act as mentors, creating a safe, supportive, and inspiring environment for young learners.",
-    img: "/images/methodology.jpg",
+    img: "/images/Advantages/2.jpeg",
   },
   {
     title: "Safe & Nurturing Environment",
     desc: "We believe in making school a home away from home. With vibrant classrooms, engaging activities, and a focus on empathy and cooperation, children feel secure, valued, and excited to learn every day.",
-    img: "/images/partners.jpg",
+    img: "/images/Advantages/1.jpeg",
   },
 ];
 
@@ -44,8 +44,8 @@ export default function AdvantageSection() {
   }, []);
 
   return (
-    <section className="py-12 bg-white">
-      <div className="container mx-auto px-10">
+    <section className="py-12 bg-[#ffd5af]">
+      <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
         Advantages
         </h2>
@@ -60,7 +60,7 @@ export default function AdvantageSection() {
               <img
                 src={item.img}
                 alt={item.title}
-                className="w-full h-48 object-cover rounded-lg mb-5"
+                className="w-full h-auto object-cover rounded-lg mb-5"
               />
               <h3 className="text-xl font-bold text-[#FE7743] mb-3">
                 {item.title}

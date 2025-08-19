@@ -85,7 +85,7 @@ export default function Home() {
       </div>
 
       {/* Our Programmes */}
-      <section className="bg-[#e1e1e1] py-12">
+      <section className="bg-[#ffd5af] py-12">
         <div className="container mx-auto px-2">
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
             Our Programmes

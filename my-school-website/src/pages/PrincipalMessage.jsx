@@ -20,12 +20,13 @@ const PrincipalMessage = () => (
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-md border-2 border-[#FE7743] overflow-hidden">
           {/* Body */}
-          <div className="p-5 sm:p-8">      
-              <img
-                src="/images/Teachers/0.jpeg"
-                alt="Design"
-                className="w-[20vw] h-[50vh] mx-auto block border-2 border-[#FE7743] rounded-xl shadow-l mb-5"
-              />
+          <div className="p-5 sm:p-8">
+            <img
+              src="/images/Teachers/0.jpeg"
+              alt="Principal"
+              className="w-40 h-52 sm:w-48 sm:h-64 mx-auto block border-2 border-[#FE7743] rounded-xl shadow-lg mb-5 object-cover"
+            />
+
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-5">
               <span className="font-semibold text-xl">Dear Parents and Guardians,</span>
               <br />
@@ -40,7 +41,7 @@ const PrincipalMessage = () => (
 
             <p className="mt-4 text-sm sm:text-base text-gray-700 leading-relaxed">
               At <span className="font-semibold">“NEEV BAALPAN KI”</span>, our
-              philosophy is centred on play-based learning, as we believe that
+              philosophy is centred on <b>play-based learning</b>, as we believe that
               play school is the most powerful vehicle for a child's development.
               Our curriculum is thoughtfully designed to ignite curiosity and
               foster creativity, allowing children to explore the world around

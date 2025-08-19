@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Location from '../components/Homepage/Location';
-import { DotLottieReact} from '@lottiefiles/dotlottie-react';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
@@ -20,10 +20,17 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#ffd5af]">
       <Navbar />
-      <div className="w-full bg-gradient-to-r from-purple-100 to-yellow-50 py-8 mb-4">
-        <h1 className="text-4xl font-bold text-center text-[#FE7743] mb-2">Contact Us</h1>
+      <div className="w-full">
+        <img
+          src="/images/Upper.png"
+          alt="Design"
+          className="w-full object-cover"
+        />
+      </div>
+      <div className="w-full py-8 mb-4">
+        <h1 className="text-4xl font-bold text-center text-black mb-2">Contact Us</h1>
         <p className="text-center text-lg text-gray-700">We'd love to hear from you! Reach out for any queries or feedback.</p>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-2 md:px-8 py-4">
@@ -80,7 +87,7 @@ const Contact = () => {
         </form>
         <div className="flex justify-center items-center w-full md:w-96">
           <DotLottieReact
-            src="/public/lottiefile/Kids Studying from Home.lottie"
+            src="/lottiefile/Kids Studying from Home.lottie"
             autoplay
             loop
             speed={1.25}
@@ -88,7 +95,7 @@ const Contact = () => {
           />
         </div>
       </div>
-        <Location />
+      <Location />
       <Footer />
     </div>
   );

@@ -10,7 +10,7 @@ const Navbar = () => {
     {
       title: "About Us",
       links: [
-        { name: "Our Moto", path: "/our-moto" },
+        { name: "Our Motto", path: "/our-moto" },
         { name: "School Prayer", path: "/school-prayer" },
         { name: "Our Faculties", path: "/our-faculties" },
         { name: "Management", path: "/management" },
@@ -35,7 +35,7 @@ const Navbar = () => {
     },
     { title: "Gallery", path: "/gallery" },
     { title: "Achievement", path: "/achievement" },
-    { title: "Contact Us", path: "/contact-us" },
+    { title: "Contact Us", path: "/contact" },
     { title: "Fee Payment", path: "/fees" },
   ];
 

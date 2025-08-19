@@ -10,7 +10,7 @@ const OurFaculties = () => {
       img: "/images/Teachers/2.png" 
     },
     { 
-      name: "SNIGDHA KUMAR", 
+      name: "SNIGDHA KUMARI", 
       exp: "5+ yrs Experience", 
       img: "/images/Teachers/3.png" 
     },
