@@ -1,13 +1,13 @@
-"use client";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const galleryImages = [
   "/images/Homepage_banner/1.jpeg",
-  "/images/Homepage_banner/2.jpeg",
+  "/images/Gallery/20.jpg",
   "/images/Homepage_banner/3.jpeg",
   "/images/Homepage_banner/4.jpeg",
-  "/images/Homepage_banner/5.jpeg",
+  "/images/Homepage_banner/15.jpg",
+  "/images/Homepage_banner/22.jpg",
 ];
 
 export default function Gallery() {
@@ -55,8 +55,8 @@ export default function Gallery() {
 
       {/* See More Button */}
       <div className="text-center mt-8">
-        <Link href="/gallery">
-          <button className="px-6 py-3 bg-[#FF9B00] text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition">
+        <Link to="/gallery">
+          <button className="px-6 py-3 bg-[#fc7601] text-white font-medium rounded-lg shadow-md hover:bg-[#b45401] transition">
             See More
           </button>
         </Link>

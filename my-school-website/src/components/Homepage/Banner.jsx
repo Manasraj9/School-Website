@@ -8,6 +8,9 @@ const images = [
   "/images/Homepage_banner/3.jpeg",
   "/images/Homepage_banner/4.jpeg",
   "/images/Homepage_banner/5.jpeg",
+  "/images/Homepage_banner/11.jpg",
+  "/images/Homepage_banner/15.jpg",
+  "/images/Homepage_banner/22.jpg",
 ]
 
 export default function ImageCarousel() {
