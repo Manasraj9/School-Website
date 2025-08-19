@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar.jsx";
 import Advantages from '../components/Homepage/Advantages'
 import Banner from '../components/Homepage/Banner'
 // import Parents from '../components/Homepage/Parentsspeak'
