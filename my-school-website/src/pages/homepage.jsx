@@ -13,28 +13,28 @@ import { GrSchedule } from "react-icons/gr";
 const programmes = [
   {
     title: "Play Group",
-    age: "2–3 years Kids",
+    age: "2.5–3.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/1.png",
     link: "/playgroup",
   },
   {
     title: "Neev Nursery",
-    age: "3–4 years Kids",
+    age: "3.5–4.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/2.png",
     link: "/nursery",
   },
   {
     title: "Neev Junior",
-    age: "4–5 years Kids",
+    age: "4.5–5.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/3.png",
     link: "/junior-kg",
   },
   {
     title: "Neev Senior",
-    age: "5–6 years Kids",
+    age: "5.5–6.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/4.png",
     link: "/senior-kg",
@@ -95,7 +95,7 @@ export default function Home() {
             {programmes.map((program, idx) => (
               <div
                 key={idx}
-                className="bg-white shadow-md rounded-xl overflow-hidden border-2 border-[#FF9B00] hover:shadow-xl transition w-72 mx-auto"
+                className="bg-white shadow-md rounded-xl overflow-hidden border-2 border-[#ffd5af] hover:shadow-xl transition w-72 mx-auto"
               >
                 <img
                   src={program.img}

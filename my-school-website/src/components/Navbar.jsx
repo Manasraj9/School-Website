@@ -23,7 +23,7 @@ const Navbar = () => {
         { name: "Director Message", path: "" },
       ],
     },
-    { title: "Academics", path: "/academic-profile" },
+    { title: "Academics", path: "/academics" },
     {
       title: "Rules & Regulations",
       links: [
