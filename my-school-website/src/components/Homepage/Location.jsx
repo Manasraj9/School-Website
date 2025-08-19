@@ -28,7 +28,7 @@ export default function Location() {
               <p className="text-gray-700">
                 <span className="font-bold">Phone</span> <br />
                 <a
-                  href="tel:+919576559666"
+                  href="tel:+919142436076"
                   className="text-blue-600 hover:underline"
                 >
                   +91-9142436076
@@ -41,7 +41,7 @@ export default function Location() {
               <p className="text-gray-700">
                 <span className="font-bold">Email</span> <br />
                 <a
-                  href="mailto:patna.boringroad@kangarookids.co.in"
+                  href="mailto:neevbaalpanki@gmail.com"
                   className="text-blue-600 hover:underline"
                 >
                   neevbaalpanki@gmail.com
