@@ -23,10 +23,7 @@ const Navbar = () => {
         { name: "Director Message", path: "" },
       ],
     },
-    {
-      title: "Academic Profile",
-      links: [{ name: "Academics", path: "/academics" }],
-    },
+    { title: "Academics", path: "/academic-profile" },
     {
       title: "Rules & Regulations",
       links: [
@@ -36,9 +33,9 @@ const Navbar = () => {
         { name: "Payment of Fees", path: "/payment-of-fees" },
       ],
     },
-    { title: "Gallery", links: [{ name: "Gallery", path: "/gallery" }] },
-    { title: "Achievement", links: [{ name: "Achievement", path: "/achievement" }] },
-    { title: "Contact Us", links: [{ name: "Contact Us", path: "/contact" }] },
+    { title: "Gallery", path: "/gallery" },
+    { title: "Achievement", path: "/achievement" },
+    { title: "Contact Us", path: "/contact-us" },
     { title: "Fee Payment", path: "/fees" },
   ];
 
@@ -62,25 +59,28 @@ const Navbar = () => {
           <span className="font-bold text-xl text-white">Neev Baalpan Ki</span>
         </Link>
 
-        {/* Hamburger Icon */}
         <button
           className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none relative"
           onClick={() => setMobileOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
           <span
-            className={`absolute w-6 h-0.5 bg-gray-800 transition-all duration-300 ${mobileOpen ? 'rotate-45' : '-translate-y-2'}`}
+            className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${mobileOpen ? 'rotate-45' : '-translate-y-2'
+              }`}
             style={{ left: '7px', top: '20px' }}
           ></span>
           <span
-            className={`absolute w-6 h-0.5 bg-gray-800 transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`}
+            className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''
+              }`}
             style={{ left: '7px', top: '20px' }}
           ></span>
           <span
-            className={`absolute w-6 h-0.5 bg-gray-800 transition-all duration-300 ${mobileOpen ? '-rotate-45' : 'translate-y-2'}`}
+            className={`absolute w-6 h-0.5 bg-white transition-all duration-300 ${mobileOpen ? '-rotate-45' : 'translate-y-2'
+              }`}
             style={{ left: '7px', top: '20px' }}
           ></span>
         </button>
+
 
         {/* Navbar Links */}
         <ul className="hidden md:flex space-x-6">

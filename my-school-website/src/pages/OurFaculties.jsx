@@ -4,9 +4,21 @@ import Footer from '../components/Footer';
 
 const OurFaculties = () => {
   const faculties = [
-    { name: "REETA SINGH", exp: "9+ yrs Experience" },
-    { name: "SNIGDHA KUMAR", exp: "5+ yrs Experience" },
-    { name: "KUMARI SWAGATA", exp: "5+ yrs Experience" },
+    { 
+      name: "REETA SINGH", 
+      exp: "9+ yrs Experience", 
+      img: "/images/Teachers/2.png" 
+    },
+    { 
+      name: "SNIGDHA KUMAR", 
+      exp: "5+ yrs Experience", 
+      img: "/images/Teachers/3.png" 
+    },
+    { 
+      name: "KUMARI SWAGATA", 
+      exp: "5+ yrs Experience", 
+      img: "/images/Teachers/1.png" 
+    },
   ];
 
   return (
@@ -28,8 +40,8 @@ const OurFaculties = () => {
       </h2>
 
       {/* Faculties Section */}
-      <section className="px-6 py-10 flex justify-center">
-        <div className="bg-[#fff2e6] rounded-2xl shadow-lg p-8 max-w-5xl w-full">
+      <section className="px-6 py-10 flex justify-center ">
+        <div className="bg-white max-w-5xl w-full border-2 border-[#FE7743] rounded-2xl shadow-lg p-6">
           {/* Description */}
           <p className="text-gray-700 text-center mb-10">
             Our team of highly qualified and experienced teachers is the cornerstone
@@ -48,8 +60,13 @@ const OurFaculties = () => {
             {faculties.map((faculty, index) => (
               <div
                 key={index}
-                className="bg-white shadow-md rounded-xl p-6 text-center border border-gray-200 hover:shadow-xl transition"
+                className="bg-[#fff2e6] shadow-md rounded-xl p-6 text-center hover:shadow-xl transition border-2 border-orange-300"
               >
+                <img 
+                  src={faculty.img} 
+                  alt={faculty.name} 
+                  className="w-24 h-24 mx-auto rounded-full object-cover mb-4 border-2 border-orange-300" 
+                />
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {faculty.name}
                 </h3>

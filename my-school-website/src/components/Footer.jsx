@@ -8,14 +8,14 @@ export default function Footer() {
                 <img
                     src="/images/Lower.png" // replace with your actual image path
                     alt="School Banner"
-                    className="w-full h-40 sm:h-64 object-cover"
+                    className="w-full object-contain sm:object-cover max-h-48 sm:max-h-64"
                 />
             </div>
 
             {/* Footer Section */}
             <footer className="bg-[#010066] text-white px-6 py-10">
                 <div className="max-w-6xl mx-auto grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-
+                    
                     {/* About */}
                     <div>
                         <h3 className="text-lg font-semibold mb-4">About Us</h3>

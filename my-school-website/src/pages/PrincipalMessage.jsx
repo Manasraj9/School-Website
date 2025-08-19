@@ -20,8 +20,13 @@ const PrincipalMessage = () => (
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-md border-2 border-[#FE7743] overflow-hidden">
           {/* Body */}
-          <div className="p-5 sm:p-8">
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+          <div className="p-5 sm:p-8">      
+              <img
+                src="/images/Teachers/0.jpeg"
+                alt="Design"
+                className="w-[20vw] h-[50vh] mx-auto block border-2 border-[#FE7743] rounded-xl shadow-l mb-5"
+              />
+            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mt-5">
               <span className="font-semibold text-xl">Dear Parents and Guardians,</span>
               <br />
               <br />
