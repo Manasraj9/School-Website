@@ -27,14 +27,14 @@ const programmes = [
     link: "/nursery",
   },
   {
-    title: "Neev Junior",
+    title: "Neev Junior (LKG)",
     age: "4.5–5.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/3.png",
     link: "/junior-kg",
   },
   {
-    title: "Neev Senior",
+    title: "Neev Senior (UKG)",
     age: "5.5–6.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/4.png",
