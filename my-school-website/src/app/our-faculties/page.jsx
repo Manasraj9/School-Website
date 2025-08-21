@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
-const OurFaculties = () => {
+export default function OurFaculties() {
   const faculties = [
     { 
       name: "REETA SINGH", 
@@ -82,4 +82,3 @@ const OurFaculties = () => {
   );
 };
 
-export default OurFaculties;

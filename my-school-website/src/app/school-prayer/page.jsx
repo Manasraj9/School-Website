@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-const SchoolPrayer = () => {
+export default function SchoolPrayer() {
   return (
     <div className="bg-[#ffd5af] min-h-screen flex flex-col">
       <Navbar />
@@ -85,4 +85,3 @@ const SchoolPrayer = () => {
   );
 };
 
-export default SchoolPrayer;

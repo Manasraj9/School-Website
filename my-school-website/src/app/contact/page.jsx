@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import Location from '../../components/Homepage/Location';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-const Contact = () => {
+export default function Contact(){
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState("");
 
@@ -131,5 +131,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;

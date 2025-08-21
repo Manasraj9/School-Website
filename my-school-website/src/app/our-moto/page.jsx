@@ -23,7 +23,7 @@ const mottoSpeech = [
   },
 ];
 
-const OurMoto = () => (
+export default function OurMoto(){
   <div className="min-h-screen bg-[#ffd5af]">
     <Navbar />
     <div className="w-full">
@@ -53,6 +53,6 @@ const OurMoto = () => (
 
     <Footer />
   </div>
-);
+};
 
-export default OurMoto;
+

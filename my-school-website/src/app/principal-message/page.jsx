@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
-const PrincipalMessage = () => (
+export default function PrincipalMessage(){
   <div className="bg-[#ffd5af]">
     <Navbar />
     <div className="w-full">
@@ -76,6 +76,4 @@ const PrincipalMessage = () => (
     </section>
     <Footer />
   </div>
-);
-
-export default PrincipalMessage;
+};

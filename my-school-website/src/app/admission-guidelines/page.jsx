@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-const AdmissionGuidelines = () => {
+export default function AdmissionGuidelines(){
   return (
     <div className="flex flex-col min-h-screen bg-[#ffd5af]">
       {/* Navbar */}
@@ -106,4 +106,3 @@ const AdmissionGuidelines = () => {
   );
 };
 
-export default AdmissionGuidelines;

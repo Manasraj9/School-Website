@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
-const Management = () => (
+export default function Management(){
   <div>
     <Navbar />
 
@@ -42,6 +42,5 @@ const Management = () => (
 
     <Footer />
   </div>
-);
+};
 
-export default Management;

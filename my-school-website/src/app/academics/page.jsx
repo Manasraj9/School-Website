@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { FaBookOpen, FaCalculator, FaPaintBrush, FaRunning, FaUsers } from "react-icons/fa";
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';

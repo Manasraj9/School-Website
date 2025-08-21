@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { FaSun, FaSnowflake, FaChild, FaClock } from "react-icons/fa";
 
-const SchoolTimings = () => {
+export default function SchoolTimings() {
   return (
     <div className="min-h-screen flex flex-col bg-[#ffd5af]">
       {/* Navbar */}
@@ -104,5 +104,4 @@ const SchoolTimings = () => {
   );
 };
 
-export default SchoolTimings;
 
