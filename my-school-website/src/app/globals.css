@@ -1,2 +1,69 @@
 @import "tailwindcss";
 
+
+.balloon {
+  position: absolute;
+  bottom: -150px;
+  width: 100px;
+  z-index: 5;
+  animation: floatUp 12s infinite ease-in-out;
+}
+
+.balloon:nth-child(2) { animation-duration: 15s; }
+.balloon:nth-child(3) { animation-duration: 18s; }
+.balloon:nth-child(4) { animation-duration: 20s; }
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-50vh) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(-10deg);
+    opacity: 0;
+  }
+}
+
+/* Falling ribbons */
+.ribbon {
+  position: absolute;
+  top: -150px;
+  width: 120px;
+  animation: fallDown 8s infinite linear;
+}
+
+.ribbon:nth-child(6) {
+  animation-duration: 10s;
+}
+.ribbon:nth-child(7) {
+  animation-duration: 12s;
+}
+
+@keyframes fallDown {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+

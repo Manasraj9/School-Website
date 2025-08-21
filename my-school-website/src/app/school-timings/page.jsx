@@ -35,25 +35,25 @@ export default function SchoolTimings() {
                 <li className="flex items-center gap-2">
                   <FaChild className="text-pink-500" />
                   <span>
-                    <strong>Play Group:</strong> 9:00 – 12:00
+                    <strong>Play Group:</strong> 9:00 AM – 12:00 PM
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaChild className="text-green-500" />
                   <span>
-                    <strong>Nursery:</strong> 8:00 – 12:00
+                    <strong>Nursery:</strong> 8:00 AM – 12:00 PM
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaChild className="text-blue-500" />
                   <span>
-                    <strong>Neev Junior (LKG):</strong> 8:05 – 1:05
+                    <strong>Neev Junior (LKG):</strong> 8:05 AM – 1:05 PM
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaChild className="text-purple-500" />
                   <span>
-                    <strong>Neev Senior (UKG):</strong> 8:00 – 1:05
+                    <strong>Neev Senior (UKG):</strong> 8:00 AM – 1:05 PM
                   </span>
                 </li>
               </ul>
@@ -71,25 +71,25 @@ export default function SchoolTimings() {
                 <li className="flex items-center gap-2">
                   <FaChild className="text-pink-500" />
                   <span>
-                    <strong>Play Group:</strong> 9:00 – 12:00
+                    <strong>Play Group:</strong> 9:00 AM – 12:00 PM
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaChild className="text-green-500" />
                   <span>
-                    <strong>Nursery:</strong> 9:00 – 12:30
+                    <strong>Nursery:</strong> 9:00 AM – 12:30 PM
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaChild className="text-blue-500" />
                   <span>
-                    <strong>Neev Junior (LKG):</strong> 9:00 – 1:00
+                    <strong>Neev Junior (LKG):</strong> 9:00 AM – 1:00 PM
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaChild className="text-purple-500" />
                   <span>
-                    <strong>Neev Senior (UKG):</strong> 9:00 – 12:00
+                    <strong>Neev Senior (UKG):</strong> 9:00 AM – 12:00 PM
                   </span>
                 </li>
               </ul>
