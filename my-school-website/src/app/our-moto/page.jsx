@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { Lightbulb, BookOpen, Home, Gamepad2 } from "lucide-react"; // playful icons
@@ -24,6 +24,7 @@ const mottoSpeech = [
 ];
 
 export default function OurMoto(){
+  return(
   <div className="min-h-screen bg-[#ffd5af]">
     <Navbar />
     <div className="w-full">
@@ -53,6 +54,7 @@ export default function OurMoto(){
 
     <Footer />
   </div>
+  )
 };
 
 

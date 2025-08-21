@@ -1,8 +1,9 @@
-import React from 'react';
+"use client";
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export default function Management(){
+  return(
   <div>
     <Navbar />
 
@@ -42,5 +43,6 @@ export default function Management(){
 
     <Footer />
   </div>
+  )
 };
 

@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
 export default function PrincipalMessage(){
+  return(
   <div className="bg-[#ffd5af]">
     <Navbar />
     <div className="w-full">
@@ -76,4 +77,5 @@ export default function PrincipalMessage(){
     </section>
     <Footer />
   </div>
+  )
 };
