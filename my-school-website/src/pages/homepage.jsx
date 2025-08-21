@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar.jsx";
 import Advantages from '../components/Homepage/Advantages'
@@ -6,7 +7,7 @@ import Banner from '../components/Homepage/Banner'
 import Gallery from '../components/Homepage/Gallery'
 import Location from '../components/Homepage/Location'
 import Footer from '../components/Footer'
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { MdOutlineChildCare } from "react-icons/md";
 import { GrSchedule } from "react-icons/gr";
 
@@ -117,7 +118,7 @@ export default function Home() {
                     </li>
                   </ul>
                   <Link
-                    to={program.link}
+                    href={program.link}
                     className="inline-block bg-[#FE7743] hover:bg-[#ffac2f]/80 text-gray-900 font-semibold px-5 py-2 rounded-lg transition"
                   >
                     Enroll Now →
@@ -158,7 +159,7 @@ export default function Home() {
                     </li>
                   </ul>
                   <Link
-                    to={program.link}
+                    href={program.link}
                     className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-5 py-2 rounded-lg transition"
                   >
                     Enroll Now →

@@ -1,5 +1,6 @@
+"use client"
 import { useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -54,7 +55,7 @@ const Navbar = () => {
     <nav className="bg-[#010066] shadow-md relative">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <img src="/images/logo.png" alt="School Logo" className="h-10" />
           <span className="font-bold text-xl text-white">Neev Baalpan Ki</span>
         </Link>
@@ -108,7 +109,7 @@ const Navbar = () => {
                       {menu.links.map((link, i) => (
                         <li key={i}>
                           <Link
-                            to={link.path}
+                            href={link.path}
                             className="block px-4 py-2 hover:bg-blue-700 hover:text-white transition-colors duration-200"
                           >
                             {link.name}
@@ -121,7 +122,7 @@ const Navbar = () => {
               ) : (
                 // Case 2: Direct Link (no dropdown)
                 <Link
-                  to={menu.path}
+                  href={menu.path}
                   className="pb-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-500 transition-all duration-300"
                 >
                   {menu.title}
@@ -161,7 +162,7 @@ const Navbar = () => {
                     {menu.links.map((link, i) => (
                       <li key={i}>
                         <Link
-                          to={link.path}
+                          href={link.path}
                           className="block py-2 px-2 text-gray-700 hover:bg-blue-100 rounded"
                           onClick={() => setMobileOpen(false)}
                         >
@@ -173,7 +174,7 @@ const Navbar = () => {
                 </details>
               ) : (
                 <Link
-                  to={menu.path}
+                  href={menu.path}
                   className="cursor-pointer py-2 px-2 font-semibold text-gray-800 hover:text-blue-500 hover:bg-blue-50 rounded block"
                   onClick={() => setMobileOpen(false)}
                 >

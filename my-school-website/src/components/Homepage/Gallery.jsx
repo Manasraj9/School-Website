@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const galleryImages = [
   "/images/Homepage_banner/1.jpeg",
@@ -55,7 +55,7 @@ export default function Gallery() {
 
       {/* See More Button */}
       <div className="text-center mt-8">
-        <Link to="/gallery">
+        <Link href="/gallery">
           <button className="px-6 py-3 bg-[#fc7601] text-white font-medium rounded-lg shadow-md hover:bg-[#b45401] transition">
             See More
           </button>
