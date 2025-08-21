@@ -43,7 +43,7 @@ export default function PaymentCard() {
 
             {/* Make image clickable */}
             <a
-              href="upi://pay?pa=your-upi-id@upi&pn=Your%20Name&cu=INR"
+              href="upi://pay?pa=neevbachpanki@oksbi@upi&pn=Your%20Name&cu=INR"
               target="_blank"
               rel="noopener noreferrer"
             >
