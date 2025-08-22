@@ -5,7 +5,7 @@ import Footer from '../../components/Footer';
 import Location from '../../components/Homepage/Location';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-export default function Contact(){
+export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState("");
 
@@ -48,6 +48,24 @@ export default function Contact(){
           alt="Design"
           className="w-full object-cover"
         />
+
+        {/* Admission Section */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 px-2 md:px-8 py-4 w-full">
+        <div className="bg-yellow-100 border-2 border-[#FE7743] rounded-2xl p-6 md:p-10 w-full max-w-md text-center flex flex-col gap-4">
+          <h2 className="text-2xl font-bold text-[#FE7743]">Admission Form</h2>
+          <p className="text-gray-700">
+            Interested in joining our school? Simply fill up the admission form by clicking the button below.
+          </p>
+          <a
+            href="https://forms.gle/BsW45T7saVSqRH1h7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#FE7743] text-white font-bold py-2 rounded-md hover:bg-orange-500 transition"
+          >
+            Fill Admission Form
+          </a>
+        </div>
+      </div>
       </div>
       <div className="w-full py-8 mb-4">
         <h1 className="text-4xl font-bold text-center text-black mb-2">Contact Us</h1>
