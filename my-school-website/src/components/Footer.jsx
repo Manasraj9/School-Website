@@ -16,7 +16,7 @@ export default function Footer() {
             {/* Footer Section */}
             <footer className="bg-[#010066] text-white px-6 py-10">
                 <div className="max-w-6xl mx-auto grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-                    
+
                     {/* About */}
                     <div>
                         <h3 className="text-lg font-semibold mb-4">About Us</h3>
@@ -31,26 +31,27 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li>
-                                <Link href="/admission-guidelines" className="hover:text-white transition">
-                                    Admission Guidelines
+                                <Link href="/admission-guidelines">
+                                    <a className="hover:text-white transition">Admission Guidelines</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/management" className="hover:text-white transition">
-                                    Management
+                                <Link href="/management">
+                                    <a className="hover:text-white transition">Management</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/gallery" className="hover:text-white transition">
-                                    Gallery
+                                <Link href="/gallery">
+                                    <a className="hover:text-white transition">Gallery</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className="hover:text-white transition">
-                                    Contact
+                                <Link href="/contact">
+                                    <a className="hover:text-white transition">Contact</a>
                                 </Link>
                             </li>
                         </ul>
+
                     </div>
 
                     {/* Social Media */}
