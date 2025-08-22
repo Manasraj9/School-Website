@@ -19,28 +19,28 @@ const programmes = [
     age: "2.5–3.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/1.png",
-    link: "/playgroup",
+    link: "/contact",
   },
   {
     title: "Neev Nursery",
     age: "3.5–4.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/2.png",
-    link: "/nursery",
+    link: "/contact",
   },
   {
     title: "Neev Junior (LKG)",
     age: "4.5–5.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/3.png",
-    link: "/junior-kg",
+    link: "/contact",
   },
   {
     title: "Neev Senior (UKG)",
     age: "5.5–6.5 years Kids",
     schedule: "5 Days a week",
     img: "/images/Classes_images/4.png",
-    link: "/senior-kg",
+    link: "/contact",
   },
 ];
 
@@ -123,12 +123,12 @@ export default function Home() {
                       <span>{program.schedule}</span>
                     </li>
                   </ul>
-                  <Link
-                    href={program.link}
-                    className="inline-block bg-[#FE7743] hover:bg-[#ffac2f]/80 text-gray-900 font-semibold px-5 py-2 rounded-lg transition"
-                  >
-                    Enroll Now →
+                  <Link href={program.link}>
+                    <a className="inline-block bg-[#FE7743] hover:bg-[#ffac2f]/80 text-gray-900 font-semibold px-5 py-2 rounded-lg transition">
+                      Enroll Now →
+                    </a>
                   </Link>
+
                 </div>
               </div>
             ))}
