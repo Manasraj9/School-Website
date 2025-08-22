@@ -31,23 +31,23 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2 text-sm text-gray-300">
                             <li>
-                                <Link href="/admission-guidelines">
-                                    <a className="hover:text-white transition">Admission Guidelines</a>
+                                <Link href="/admission-guidelines" className="hover:text-white transition">
+                                    Admission Guidelines
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/management">
-                                    <a className="hover:text-white transition">Management</a>
+                                <Link href="/management" className="hover:text-white transition">
+                                    Management
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/gallery">
-                                    <a className="hover:text-white transition">Gallery</a>
+                                <Link href="/gallery" className="hover:text-white transition">
+                                    Gallery
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact">
-                                    <a className="hover:text-white transition">Contact</a>
+                                <Link href="/contact" className="hover:text-white transition">
+                                    Contact
                                 </Link>
                             </li>
                         </ul>

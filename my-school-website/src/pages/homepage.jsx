@@ -123,10 +123,11 @@ export default function Home() {
                       <span>{program.schedule}</span>
                     </li>
                   </ul>
-                  <Link href={program.link}>
-                    <a className="inline-block bg-[#FE7743] hover:bg-[#ffac2f]/80 text-gray-900 font-semibold px-5 py-2 rounded-lg transition">
-                      Enroll Now →
-                    </a>
+                  <Link
+                    href={program.link}
+                    className="inline-block bg-[#FE7743] hover:bg-[#ffac2f]/80 text-gray-900 font-semibold px-5 py-2 rounded-lg transition"
+                  >
+                    Enroll Now →
                   </Link>
 
                 </div>
