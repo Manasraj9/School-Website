@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -6,7 +7,7 @@ export default function Footer() {
             {/* Top Image above Footer */}
             <div className="w-full">
                 <img
-                    src="/images/Lower.png" // replace with your actual image path
+                    src="/images/Lower.png"
                     alt="School Banner"
                     className="w-full object-contain sm:object-cover max-h-48 sm:max-h-64"
                 />
@@ -29,10 +30,26 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2 text-sm text-gray-300">
-                            <li><a href="#" className="hover:text-white transition">Home</a></li>
-                            <li><a href="#" className="hover:text-white transition">Programs</a></li>
-                            <li><a href="#" className="hover:text-white transition">Gallery</a></li>
-                            <li><a href="#" className="hover:text-white transition">Contact</a></li>
+                            <li>
+                                <Link href="/" className="hover:text-white transition">
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/management" className="hover:text-white transition">
+                                    Management
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/gallery" className="hover:text-white transition">
+                                    Gallery
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className="hover:text-white transition">
+                                    Contact
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -40,16 +57,19 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
                         <div className="flex gap-6 text-2xl">
-                            <a href="#" className="hover:text-blue-400 transition"><FaFacebook /></a>
-                            <a href="#" className="hover:text-pink-400 transition"><FaInstagram /></a>
-                            <a href="#" className="hover:text-sky-400 transition"><FaTwitter /></a>
+                            <a href="https://www.facebook.com/share/17AktSjFnf/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">
+                                <FaFacebook />
+                            </a>
+                            <a href="https://www.instagram.com/_.neev._2020?igsh=MXV5YnV0aTlzb2wyMg==" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 transition">
+                                <FaInstagram />
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 {/* Bottom Copyright */}
                 <div className="text-center text-sm text-gray-400 mt-8 border-t border-gray-700 pt-4">
-                    © {new Date().getFullYear()} Your Brand. All rights reserved.
+                    © {new Date().getFullYear()} Neev Baalpan ki . All rights reserved.
                 </div>
             </footer>
         </div>

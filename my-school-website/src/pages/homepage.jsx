@@ -7,6 +7,8 @@ import Banner from '../components/Homepage/Banner'
 import Gallery from '../components/Homepage/Gallery'
 import Location from '../components/Homepage/Location'
 import Footer from '../components/Footer'
+import Birthdaytoday from '../components/Homepage/Birthdaytoday.jsx';
+import Noticedrawer from '../components/Homepage/Noticedrawer.jsx';
 import Link from "next/link";
 import { MdOutlineChildCare } from "react-icons/md";
 import { GrSchedule } from "react-icons/gr";
@@ -74,9 +76,13 @@ export default function Home() {
           className="w-[90%] object-cover m-5"
         />
       </div>
-      <div className="w-full flex justify-center bg-[#010066]">
+      <div className="w-full flex justify-center bg-[#010066] relative">
         <Banner />
+
+        {/* 🔔 Notice Drawer */}
+        <Noticedrawer />
       </div>
+
       <div className="w-full">
         <img
           src="/images/Upper.png"
@@ -173,6 +179,7 @@ export default function Home() {
       </section>
       <Advantages />
       {/* <Parents /> */}
+      <Birthdaytoday />
       <Gallery />
       <Location />
 
